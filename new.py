@@ -348,7 +348,7 @@ if __name__ == "__main__":
         gr.Markdown("# 🧠 Akıllı Belge Sorgulama Agent'ı")
         gr.Markdown(
             "Doğal dilde konuşarak JSON şablonu oluşturun veya anlamsal doğrulama kuralları ekleyin. Agent, sizin için bilgileri bulup hem formata hem de bağlama göre doğrulayacaktır.")
-        with gr.Accordion("Adım 1: Şablon Oluşturma Yardımcısı (İsteğe Bağlı)", open=False):
+        with gr.Accordion("Adım 1: Şablon Oluşturma Yardımcısı", open=False):
             gr.Markdown(
                 "İsteğinizi yazın, sizin için bir şablon oluşturalım.\n**Format Kuralı Örneği:** `TCKN ve e-posta istiyorum, ikisini de doğrula`\n `fatura toplamını istiyorum ve bu toplamın ara toplam ile kdv toplamına eşit olup olmadığını doğrula`")
             schema_chatbot = gr.Chatbot(label="Şablon Oluşturucu")
